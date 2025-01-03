@@ -4,10 +4,11 @@ version = "0.1.0"
 description = ""
 authors = ["martin76ec <larreaamartin@gmail.com>"]
 readme = "README.md"
+packages = [{include = "*", from="src"}]
 package-mode = false
 
 [tool.poetry.scripts]
-start = "lang_chain_test.docs:main"
+start = "src.main:main"
 
 [tool.poetry.dependencies]
 python = "^3.10"
@@ -36,7 +37,7 @@ venvPath = "."
 venv = ".venv"
 
 [tool.black]
-line-length = 80
+line-length = 160
 target-version = ["py39"]
 include = '\.pyi?$'
 exclude = '''

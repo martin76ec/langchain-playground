@@ -12,14 +12,12 @@ start = "src.main:main"
 
 [tool.poetry.dependencies]
 python = "^3.10"
-langchain = "^0.3.13"
 langchain-google-genai = "^2.0.7"
 python-dotenv = "^1.0.1"
-langchain-openai = "^0.2.14"
 langchain-community = "^0.3.13"
 pypdf = "^5.1.0"
 langchain-text-splitters = "^0.3.4"
-langchain-google-vertexai = "^2.0.9"
+langchain = "^0.3.13"
 
 [tool.poetry.group.dev.dependencies]
 black = "^24.10.0"
